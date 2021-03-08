@@ -1,0 +1,13 @@
+.card {
+  background-image: url('../images/talent-calc-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border: 2px solid #101214;
+
+  .card__header {
+    margin: 1rem;
+    display: grid;
+    place-items: center;
+  }
+}
