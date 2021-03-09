@@ -18,6 +18,7 @@ import prestigeUnselectedIcon from '../images/prestige-unselected.png';
 
 export const getIncreaseEffectsStackIcon = (): Icon => {
   return {
+    id: 1,
     selectedUrl: increaseEffectSelectedIcon,
     unselectedUrl: increaseEffectUnselectedIcon,
     alt: 'Increase the number of stacks for status effects',
@@ -27,6 +28,7 @@ export const getIncreaseEffectsStackIcon = (): Icon => {
 
 export const getBreathStaminaIcon = (): Icon => {
   return {
+    id: 2,
     selectedUrl: breathSelectedIcon,
     unselectedUrl: breathUnselectedIcon,
     alt: 'Increase the duration you can hold your breath',
@@ -36,6 +38,7 @@ export const getBreathStaminaIcon = (): Icon => {
 
 export const getCarryFoodIcon = (): Icon => {
   return {
+    id: 3,
     selectedUrl: carryFoodSelectedIcon,
     unselectedUrl: carryFoodUnselectedIcon,
     alt: 'Increase the amount of food you can carry',
@@ -45,6 +48,7 @@ export const getCarryFoodIcon = (): Icon => {
 
 export const getDoomIcon = (): Icon => {
   return {
+    id: 4,
     selectedUrl: doomSelectedIcon,
     unselectedUrl: doomUnselectedIcon,
     alt: 'When used has 10% chance to kill enemy on hit',
@@ -54,6 +58,7 @@ export const getDoomIcon = (): Icon => {
 
 export const getFoodEffectivenessIcon = (): Icon => {
   return {
+    id: 5,
     selectedUrl: foodEffectSelectedIcon,
     unselectedUrl: foodEffectUnselectedIcon,
     alt: 'Increase the effectiveness of using food items',
@@ -63,6 +68,7 @@ export const getFoodEffectivenessIcon = (): Icon => {
 
 export const getIncreaseStealthIcon = (): Icon => {
   return {
+    id: 6,
     selectedUrl: increaseStealthSelectedIcon,
     unselectedUrl: increaseStealthUnselecedIcon,
     alt: 'Increase stealth so enemies take longer to react to your presence',
@@ -72,6 +78,7 @@ export const getIncreaseStealthIcon = (): Icon => {
 
 export const getLightningIcon = (): Icon => {
   return {
+    id: 7,
     selectedUrl: lightningSelectedIcon,
     unselectedUrl: lightningUnselectedIcon,
     alt: 'When activated will add an electric shock to your attacks',
@@ -81,6 +88,7 @@ export const getLightningIcon = (): Icon => {
 
 export const getPrestigeIcon = (): Icon => {
   return {
+    id: 8,
     selectedUrl: prestigeSelectedIcon,
     unselectedUrl: prestigeUnselectedIcon,
     alt: 'Gives a permanent increase to your Prestige level',
