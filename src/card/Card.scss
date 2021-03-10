@@ -1,0 +1,56 @@
+.card {
+  background-image: url('../images/talent-calc-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  border: 2px solid gray;
+
+  .card__header {
+    margin: 1rem;
+    place-items: center;
+  }
+
+  .card__content {
+    display: grid;
+    grid-template-rows: auto auto;
+
+    .card__talent-path-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      .card__talent-path {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .card__counter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .card {
+
+    .card__content {
+      grid-template-rows: unset;
+      grid-template-columns: auto auto;
+
+      .card__talent-path-container {
+        grid-template-columns: unset;
+        grid-template-rows: auto auto;
+        margin-bottom: 2rem;
+      }
+
+      .card__counter {
+        padding-right: 3rem;
+      }
+    }
+  }
+}
+
