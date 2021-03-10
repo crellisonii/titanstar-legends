@@ -96,10 +96,14 @@ export const getPrestigeIcon = (): Icon => {
   }
 }
 
-export const getTalentPath1Icons = (): Icon[] => {
+const getTalentPath1Icons = (): Icon[] => {
   return [getIncreaseEffectsStackIcon(), getCarryFoodIcon(), getFoodEffectivenessIcon(), getPrestigeIcon()];
 }
 
-export const getTalentPath2Icons = (): Icon[] => {
+const getTalentPath2Icons = (): Icon[] => {
   return [getIncreaseStealthIcon(), getBreathStaminaIcon(), getLightningIcon(), getDoomIcon()];
+}
+
+export const getAllTalents = (): Icon[][] => {
+  return [getTalentPath1Icons(), getTalentPath2Icons()];
 }
