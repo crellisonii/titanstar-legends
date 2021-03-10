@@ -21,8 +21,9 @@ export const getIncreaseEffectsStackIcon = (): Icon => {
     id: 1,
     selectedUrl: increaseEffectSelectedIcon,
     unselectedUrl: increaseEffectUnselectedIcon,
-    alt: 'Increase the number of stacks for status effects',
-    selected: false
+    description: 'Increase the number of stacks for status effects',
+    selected: false,
+    alt: 'increase effects stack'
   }
 }
 
@@ -31,8 +32,9 @@ export const getBreathStaminaIcon = (): Icon => {
     id: 2,
     selectedUrl: breathSelectedIcon,
     unselectedUrl: breathUnselectedIcon,
-    alt: 'Increase the duration you can hold your breath',
-    selected: false
+    description: 'Increase the duration you can hold your breath',
+    selected: false,
+    alt: 'increase breath stamina'
   }
 }
 
@@ -41,8 +43,9 @@ export const getCarryFoodIcon = (): Icon => {
     id: 3,
     selectedUrl: carryFoodSelectedIcon,
     unselectedUrl: carryFoodUnselectedIcon,
-    alt: 'Increase the amount of food you can carry',
-    selected: false
+    description: 'Increase the amount of food you can carry',
+    selected: false,
+    alt: 'increase carry food capacity'
   }
 }
 
@@ -51,8 +54,9 @@ export const getDoomIcon = (): Icon => {
     id: 4,
     selectedUrl: doomSelectedIcon,
     unselectedUrl: doomUnselectedIcon,
-    alt: 'When used has 10% chance to kill enemy on hit',
-    selected: false
+    description: 'When used has 10% chance to kill enemy on hit',
+    selected: false,
+    alt: 'doom ability'
   }
 }
 
@@ -61,8 +65,9 @@ export const getFoodEffectivenessIcon = (): Icon => {
     id: 5,
     selectedUrl: foodEffectSelectedIcon,
     unselectedUrl: foodEffectUnselectedIcon,
-    alt: 'Increase the effectiveness of using food items',
-    selected: false
+    description: 'Increase the effectiveness of using food items',
+    selected: false,
+    alt: 'increase food effectiveness'
   }
 }
 
@@ -71,8 +76,9 @@ export const getIncreaseStealthIcon = (): Icon => {
     id: 6,
     selectedUrl: increaseStealthSelectedIcon,
     unselectedUrl: increaseStealthUnselecedIcon,
-    alt: 'Increase stealth so enemies take longer to react to your presence',
-    selected: false
+    description: 'Increase stealth so enemies take longer to react to your presence',
+    selected: false,
+    alt: 'increase stealth'
   }
 }
 
@@ -81,8 +87,9 @@ export const getLightningIcon = (): Icon => {
     id: 7,
     selectedUrl: lightningSelectedIcon,
     unselectedUrl: lightningUnselectedIcon,
-    alt: 'When activated will add an electric shock to your attacks',
-    selected: false
+    description: 'When activated will add an electric shock to your attacks',
+    selected: false,
+    alt: 'ligtning ability'
   }
 }
 
@@ -91,8 +98,9 @@ export const getPrestigeIcon = (): Icon => {
     id: 8,
     selectedUrl: prestigeSelectedIcon,
     unselectedUrl: prestigeUnselectedIcon,
-    alt: 'Gives a permanent increase to your Prestige level',
-    selected: false
+    description: 'Gives a permanent increase to your Prestige level',
+    selected: false,
+    alt: 'increase prestige attribute'
   }
 }
 
