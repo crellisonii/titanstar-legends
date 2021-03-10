@@ -4,4 +4,5 @@ export interface Icon {
   unselectedUrl: string;
   alt: string;
   selected: boolean;
+  description: string;
 }

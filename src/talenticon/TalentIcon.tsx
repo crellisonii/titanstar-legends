@@ -23,6 +23,7 @@ const TalentIcon: React.FunctionComponent<TalentIconProps> = ({ icon, handleClic
         onContextMenu={ () => handleRightClick(icon) }
         onMouseEnter={ () => !icon.selected ? setIconSrc(icon.selectedUrl) : ''}
         onMouseLeave={ () => !icon.selected ? setIconSrc(icon.unselectedUrl) : ''}
+        title={ icon.description }
       />
     </div>
   );
