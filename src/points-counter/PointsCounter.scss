@@ -1,0 +1,14 @@
+.counter {
+  background-color: #080a08;
+  display: inline-block;
+  text-align: center;
+  padding: 1rem;
+
+  .counter__text {
+    color: white;
+  }
+
+  .counter__label {
+    color: #334762;
+  }
+}
