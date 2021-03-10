@@ -1,23 +1,28 @@
 import './TalentIcon.scss';
 
 import { Icon } from '../interfaces';
+import { useState } from 'react';
 
 export interface TalentIconProps{
   icon: Icon;
-  handleClick(id: number): void;
-  handleRightClick(id: number): void;
+  handleClick(icon: Icon): void;
+  handleRightClick(icon: Icon): void;
 }
 
 const TalentIcon: React.FunctionComponent<TalentIconProps> = ({ icon, handleClick, handleRightClick }) => {
 
+  const [iconSrc, setIconSrc] = useState(icon.selected ? icon.selectedUrl : icon.unselectedUrl);
+
   return (
-    <div>
+    <div className="image">
       <img
-        className="image"
-        src={ icon.selected ? icon.selectedUrl : icon.unselectedUrl }
+        className={ icon.selected ? 'selected' : '' }
+        src={ iconSrc }
         alt= { icon.alt }
-        onClick={ () => handleClick(icon.id) }
-        onContextMenu={ () => handleRightClick(icon.id) }
+        onClick={ () => handleClick(icon) }
+        onContextMenu={ () => handleRightClick(icon) }
+        onMouseEnter={ () => !icon.selected ? setIconSrc(icon.selectedUrl) : ''}
+        onMouseLeave={ () => !icon.selected ? setIconSrc(icon.unselectedUrl) : ''}
       />
     </div>
   );
